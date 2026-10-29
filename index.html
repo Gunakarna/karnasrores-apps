@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b1020" />
+    <meta
+      name="description"
+      content="Explore apps from Gunakarna Apps Store. Discover mobile apps, utilities and entertainment."
+    />
+    <title>karna Apps Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="apps.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="#" class="brand" aria-label="Gunakarna Apps Store home">
+          <span class="brand-icon">G</span>
+          <span>Gunakarna<span class="brand-light"> Store</span></span>
+        </a>
+        <a href="#apps" class="nav-link">Explore Apps <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <div class="eyebrow">
+            <span class="live-dot"></span> YOUR PERSONAL APP DESTINATION
+          </div>
+          <h1>Discover apps.<br /><span>Experience more.</span></h1>
+          <p class="hero-description">
+            Welcome to Gunakarna Apps Store — a curated collection of
+            applications, utilities and entertainment, all in one place.
+          </p>
+          <a href="#apps" class="hero-button"
+            >Explore the collection <span>↓</span></a
+          >
+          <div class="hero-stats">
+            <div><strong id="appCount">12</strong><span>Apps listed</span></div>
+            <div class="stat-divider"></div>
+            <div>
+              <strong>One place</strong><span>Your app collection</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="floating-icon icon-one">G</div>
+          <div class="floating-icon icon-two">▶</div>
+          <div class="floating-icon icon-three">✦</div>
+          <div class="hero-logo">
+            <span>G</span>
+            <div class="hero-logo-glow"></div>
+          </div>
+          <div class="hero-art-caption">
+            <span class="caption-dot"></span> Made for curious minds
+          </div>
+        </div>
+      </section>
+
+      <section class="store-section" id="apps">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">THE COLLECTION</span>
+            <h2>Find your next app<span class="heading-period">.</span></h2>
+            <p>Explore the apps available in the Gunakarna collection.</p>
+          </div>
+          <span class="collection-label"
+            ><span class="live-dot"></span> App library</span
+          >
+        </div>
+
+        <div class="store-controls">
+          <label class="search-box">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input
+              type="search"
+              id="appSearch"
+              placeholder="Search apps..."
+              aria-label="Search apps"
+            />
+            <kbd>/</kbd>
+          </label>
+          <div class="filter-list" role="group" aria-label="Filter apps">
+            <button
+              class="filter-button active"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              All apps
+            </button>
+            <button
+              class="filter-button"
+              data-filter="entertainment"
+              aria-pressed="false"
+            >
+              Entertainment
+            </button>
+            <button
+              class="filter-button"
+              data-filter="utility"
+              aria-pressed="false"
+            >
+              Utilities
+            </button>
+            <button
+              class="filter-button"
+              data-filter="communication"
+              aria-pressed="false"
+            >
+              Communication
+            </button>
+            <button
+              class="filter-button"
+              data-filter="upcoming"
+              aria-pressed="false"
+            >
+              Coming soon
+            </button>
+          </div>
+        </div>
+
+        <div class="results-line">
+          <span id="resultsCount">12 apps</span>
+          <span>Explore something new <span class="sparkle">✦</span></span>
+        </div>
+
+        <div class="app-grid" id="appGrid">
+          <article class="app-card" data-category="entertainment">
+            <div class="card-top">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/crud-app-ff9c4.appspot.com/o/karna%20images%2FIMG-20231230-WA0000.jpg?alt=media&token=1240f5a2-8fe5-40c2-8757-4e98bb71dca8"
+                alt="MovieShencha app icon"
+                class="app-icon"
+                loading="lazy"
+              />
+              <span class="app-tag">Entertainment</span>
+            </div>
+            <h3>MovieShencha</h3>
+            <p>
+              Discover movies, explore reviews and find your next movie-night
+              favourite.
+            </p>
+            <div class="card-footer">
+              <span class="app-type">Android app</span
+              ><a
+                class="download-button"
+                href="https://gunakarna.github.io/Gunakarna/ChckyCals.apk"
+                >Download <span>↗</span></a
+              >
+            </div>
+          </article>
+
+          <article class="app-card" data-category="utility">
+            <div class="card-top">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/crud-app-ff9c4.appspot.com/o/karna%20images%2Ftop-view-5g-sim-cards_23-2148779264.jpg?alt=media&token=956d1bf1-562c-472b-9b45-3aa82db33fac"
+                alt="SIM Service app icon"
+                class="app-icon"
+                loading="lazy"
+              />
+              <span class="app-tag">Utility</span>
+            </div>
+            <h3>SIM Service App</h3>
+            <p>
+              A mobile utility for SIM-related management and supported device
+              services.
+            </p>
+            <div class="card-footer">
+              <span class="app-type">Android app</span
+              ><a
+                class="download-button"
+                href="https://drive.google.com/u/0/uc?id=1Fybj1ntZlyFsuJKtKGYBBmIEsOdl8YLB&amp;export=download"
+                >Download <span>↗</span></a
+              >
+            </div>
+          </article>
+
+          <article class="app-card" data-category="entertainment">
+            <div class="card-top">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/crud-app-ff9c4.appspot.com/o/karna%20images%2FEvilMove.png?alt=media&amp;token=ea4d5ec0-03a4-4eb3-b0d8-755a637fe85f"
+                alt="EvilMovie app icon"
+                class="app-icon"
+                loading="lazy"
+              />
+              <span class="app-tag">Entertainment</span>
+            </div>
+            <h3>EvilMovie</h3>
+            <p>
+              Explore movie entertainment and discover content in a dedicated
+              movie app.
+            </p>
+            <div class="card-footer">
+              <span class="app-type">Android app</span
+              ><a
+                class="download-button"
+                href="https://gunakarna.github.io/Gunakarna/MovieShencha_signed3.apk"
+                >Download <span>↗</span></a
+              >
+            </div>
+          </article>
+
+          <article class="app-card" data-category="utility">
+            <div class="card-top">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/crud-app-ff9c4.appspot.com/o/karna%20images%2Fsim2.jpg?alt=media&amp;token=1fbebc94-8778-4411-bbb3-ad0ba764f62a"
+                alt="SIM Service Own app icon"
+                class="app-icon"
+                loading="lazy"
+              />
+              <span class="app-tag">Utility</span>
+            </div>
+            <h3>SIM Service Own</h3>
+            <p>
+              A SIM-related utility for supported configurations and device
+              features.
+            </p>
+            <div class="card-footer">
+              <span class="app-type">Android app</span
+              ><a
+                class="download-button"
+                href="https://gunakarna.github.io/Gunakarna/Sim%20services_signedOwn.apk"
+                >Download <span>↗</span></a
+              >
+            </div>
+          </article>
+
+          <article class="app-card" data-category="utility">
+            <div class="card-top">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/crud-app-ff9c4.appspot.com/o/karna%20images%2Fistockphoto-1336906463-612x612.jpg?alt=media&amp;token=7214ca7f-6846-4eb9-a3fd-8b6727da6baa"
+                alt="Testing App icon"
+                class="app-icon"
+                loading="lazy"
+              />
+              <span class="app-tag">Utility</span>
+            </div>
+            <h3>Testing App</h3>
+            <p>
+              A test application for evaluating supported keyboard and
+              accessibility features.
+            </p>
+            <div class="card-footer">
+              <span class="app-type">Android app</span
+              ><a
+                class="download-button"
+                href="https://gunakarna.github.io/Gunakarna/MoviesShancha_V3.apk"
+                >Download <span>↗</span></a
+              >
+            </div>
+          </article>
+
+          <article class="app-card" data-category="utility">
+            <div class="card-top">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/crud-app-ff9c4.appspot.com/o/karna%20images%2Fistockphoto-1336906463-612x612.jpg?alt=media&amp;token=7214ca7f-6846-4eb9-a3fd-8b6727da6baa"
+                alt="Google App icon"
+                class="app-icon"
+                loading="lazy"
+              />
+              <span class="app-tag">Utility</span>
+            </div>
+            <h3>Google App</h3>
+            <p>
+              A device utility. Review its permissions and supported features
+              before installation.
+            </p>
+            <div class="card-footer">
+              <span class="app-type">Android app</span
+              ><a
+                class="download-button"
+                href="https://gunakarna.github.io/Gunakarna/Google_signed.apk"
+                >Download <span>↗</span></a
+              >
+            </div>
+          </article>
+
+          <article class="app-card" data-category="communication">
+            <div class="card-top">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/karnaappsgk.appspot.com/o/SMS.jpg?alt=media&amp;token=9b213f6a-8c3d-43b3-867c-0c0d17f62fad"
+                alt="SMS App icon"
+                class="app-icon"
+                loading="lazy"
+              />
+              <span class="app-tag">Communication</span>
+            </div>
+            <h3>SMS App</h3>
+            <p>
+              An SMS-related app for supported messaging workflows and features.
+            </p>
+            <div class="card-footer">
+              <span class="app-type">Android app</span
+              ><a
+                class="download-button"
+                href="https://gunakarna.github.io/Gunakarna/Google%27s.apk"
+                >Download <span>↗</span></a
+              >
+            </div>
+          </article>
+
+          <article class="app-card upcoming-card" data-category="upcoming">
+            <div class="card-top">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/crud-app-ff9c4.appspot.com/o/karna%20images%2Fistockphoto-1336906463-612x612.jpg?alt=media&amp;token=7214ca7f-6846-4eb9-a3fd-8b6727da6baa"
+                alt="Upcoming app placeholder icon"
+                class="app-icon"
+                loading="lazy"
+              />
+              <span class="app-tag upcoming-tag">Coming soon</span>
+            </div>
+            <h3>Upcoming App</h3>
+            <p>Something new is in the works. Check back for the launch.</p>
+            <div class="card-footer">
+              <span class="app-type">In development</span
+              ><span class="coming-button">Coming soon</span>
+            </div>
+          </article>
+
+          <article class="app-card upcoming-card" data-category="upcoming">
+            <div class="card-top">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/crud-app-ff9c4.appspot.com/o/karna%20images%2Fistockphoto-1336906463-612x612.jpg?alt=media&amp;token=7214ca7f-6846-4eb9-a3fd-8b6727da6baa"
+                alt="Upcoming app placeholder icon"
+                class="app-icon"
+                loading="lazy"
+              />
+              <span class="app-tag upcoming-tag">Coming soon</span>
+            </div>
+            <h3>Upcoming App</h3>
+            <p>A new addition to the Gunakarna app collection is on its way.</p>
+            <div class="card-footer">
+              <span class="app-type">In development</span
+              ><span class="coming-button">Coming soon</span>
+            </div>
+          </article>
+
+          <article class="app-card upcoming-card" data-category="upcoming">
+            <div class="card-top">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/crud-app-ff9c4.appspot.com/o/karna%20images%2Fistockphoto-1336906463-612x612.jpg?alt=media&amp;token=7214ca7f-6846-4eb9-a3fd-8b6727da6baa"
+                alt="Upcoming app placeholder icon"
+                class="app-icon"
+                loading="lazy"
+              />
+              <span class="app-tag upcoming-tag">Coming soon</span>
+            </div>
+            <h3>Upcoming App</h3>
+            <p>More apps and new experiences are planned for the collection.</p>
+            <div class="card-footer">
+              <span class="app-type">In development</span
+              ><span class="coming-button">Coming soon</span>
+            </div>
+          </article>
+
+          <article class="app-card upcoming-card" data-category="upcoming">
+            <div class="card-top">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/crud-app-ff9c4.appspot.com/o/karna%20images%2Fistockphoto-1336906463-612x612.jpg?alt=media&amp;token=7214ca7f-6846-4eb9-a3fd-8b6727da6baa"
+                alt="Upcoming app placeholder icon"
+                class="app-icon"
+                loading="lazy"
+              />
+              <span class="app-tag upcoming-tag">Coming soon</span>
+            </div>
+            <h3>Upcoming App</h3>
+            <p>Stay tuned for more releases from Gunakarna.</p>
+            <div class="card-footer">
+              <span class="app-type">In development</span
+              ><span class="coming-button">Coming soon</span>
+            </div>
+          </article>
+
+          <article class="app-card" data-category="entertainment">
+            <div class="card-top">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/crud-app-ff9c4.appspot.com/o/karna%20images%2Fistockphoto-1336906463-612x612.jpg?alt=media&amp;token=7214ca7f-6846-4eb9-a3fd-8b6727da6baa"
+                alt="Ratorza App icon"
+                class="app-icon"
+                loading="lazy"
+              />
+              <span class="app-tag">Entertainment</span>
+            </div>
+            <h3>Ratorza App</h3>
+            <p>Explore the Ratorza application and its available services.</p>
+            <div class="card-footer multi-actions">
+              <a
+                class="secondary-button"
+                href="https://venational-bean.000webhostapp.com/ServerPanel/public/login.php"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open site ↗</a
+              >
+              <a
+                class="download-button"
+                href="https://karnameena.github.io/Codes/MovieTrator_signed.apk"
+                >Download <span>↗</span></a
+              >
+            </div>
+          </article>
+        </div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <span class="empty-icon">⌕</span>
+          <h3>No apps found</h3>
+          <p>Try a different name or select another category.</p>
+          <button class="reset-button" id="resetSearch">Show all apps</button>
+        </div>
+      </section>
+
+      <section class="about-strip">
+        <div class="about-symbol">✦</div>
+        <div>
+          <h2>Built with a vision.</h2>
+          <p>
+            A personal collection of apps, experiments and ideas by Gunakarna.
+          </p>
+        </div>
+        <a href="#apps" class="about-link">Explore apps ↗</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a href="#" class="footer-brand"
+        ><span class="footer-brand-icon">G</span>Gunakarna Store</a
+      >
+      <p>
+        © <span id="currentYear">2026</span> Gunakarna. All rights reserved.
+      </p>
+      <p class="developer-credit">
+        Crafted with <span aria-label="love">♥</span> · Developed by
+        <strong>Gunakarna</strong>
+      </p>
+    </footer>
+
+    <script>
+      const searchInput = document.getElementById("appSearch");
+      const filterButtons = document.querySelectorAll(".filter-button");
+      const appCards = document.querySelectorAll(".app-card");
+      const resultsCount = document.getElementById("resultsCount");
+      const appCount = document.getElementById("appCount");
+      const emptyState = document.getElementById("emptyState");
+      const resetSearch = document.getElementById("resetSearch");
+      let activeFilter = "all";
+
+      function filterApps() {
+        const searchTerm = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+        appCards.forEach((card) => {
+          const matchesSearch = card.textContent
+            .toLowerCase()
+            .includes(searchTerm);
+          const matchesCategory =
+            activeFilter === "all" || card.dataset.category === activeFilter;
+          const isVisible = matchesSearch && matchesCategory;
+          card.hidden = !isVisible;
+          if (isVisible) visibleCount++;
+        });
+        resultsCount.textContent = `${visibleCount} ${visibleCount === 1 ? "app" : "apps"}`;
+        emptyState.hidden = visibleCount !== 0;
+      }
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          activeFilter = button.dataset.filter;
+          filterButtons.forEach((item) => {
+            const isActive = item === button;
+            item.classList.toggle("active", isActive);
+            item.setAttribute("aria-pressed", String(isActive));
+          });
+          filterApps();
+        });
+      });
+
+      searchInput.addEventListener("input", filterApps);
+      resetSearch.addEventListener("click", () => {
+        searchInput.value = "";
+        activeFilter = "all";
+        filterButtons.forEach((button) => {
+          const isActive = button.dataset.filter === "all";
+          button.classList.toggle("active", isActive);
+          button.setAttribute("aria-pressed", String(isActive));
+        });
+        filterApps();
+        searchInput.focus();
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (
+          event.key === "/" &&
+          !["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)
+        ) {
+          event.preventDefault();
+          searchInput.focus();
+        }
+        if (event.key === "Escape" && document.activeElement === searchInput) {
+          searchInput.value = "";
+          filterApps();
+          searchInput.blur();
+        }
+      });
+
+      appCount.textContent = appCards.length;
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+      filterApps();
+    </script>
+  </body>
+</html>
